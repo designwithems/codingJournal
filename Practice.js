@@ -38,10 +38,6 @@ Minus(6,10,15)
 
 //Global scope and functions
 
-/* Global scope means they can be seen everywhere in your Javascript code
-
-Variable which are defined outside of a function block have global scope*/
-
     //declare your variable here
 var myGLobal = 10;
 
@@ -67,9 +63,6 @@ function fun2 (){
 //fun2()
 
 //Local Scope and Functions
-/* Local Scope and functions
-
-means only visible w/in a function, if you're trying to access a variable win a function it won't allow you*/
 
 function lolsio(a, b){
     var loli = (a+b)
@@ -78,7 +71,6 @@ function lolsio(a, b){
 
 lolsio()
 
-
 //Global vs Local Scope
 
 var Top = ' T-shirt'
@@ -86,15 +78,10 @@ var Top = ' T-shirt'
 function Clothes(){
  var Top = 'Sweatshirt'
     return Top
-// in the scenario where you had to use a name that was already used outside the function, the one u use locally will persevere
 }
 
 console.log(Clothes())
-/* now in the case u use a variable outside the function the one that will show up is the one that has global function example */
-
 console.log(Top)
-
-//hehehehhehehe
 
 //Return a Value from a function
 
@@ -363,22 +350,161 @@ console.log(InsideOutside(28))
 
 //Else Statements
 
-
+//***line 367
 varie = ["You have slain the enemy", "Double Kill", "Triple Kill", "Maniac", "Savage"]
 function Announcement(kill){
     if (kill == 1){
-        return varie [0]
+        return varie [0];
+
     } else if (kill == 2){
-        return varie [1]
+        return varie [1];
+
     } else if (kill == 3){
-        return varie [2]
+        return varie [2];
+
     } else if (kill == 4){
-        return varie [3]
+        return varie [3];
+
     } else (kill >= 5) 
-        return varie [4]
+        return varie [4];
 }
 
 console.log(Announcement(2))
 
 // switch statements
 
+/* A switch statement tests a value and can  have many case statements which define various possible values
+
+
+Sample activity write a switch statement which tests val and sets answer for the following conditions :
+
+1- "alpha"
+2- "beta"
+3- "gamma"
+4- "delta"
+
+*/
+
+function caseInSwitch(val){
+    var answer = "";
+    switch(val){
+        case 1:
+                answer = "alpha";
+                break;
+        case 2:
+                answer = "beta";
+                break;
+        case 3: 
+                answer = "gamma";
+                break;
+        case 4: 
+                answer = "delta";
+                break;
+    }
+    return answer;
+}
+
+//change this value to test
+
+console.log(caseInSwitch(3))
+
+
+
+//default option in an else statement
+
+
+
+
+//object
+
+var testobj = {
+    12: "No math",
+    16: "kill",
+    19:"lol",
+};
+
+var playernumber = 16
+var player = testobj[playernumber];
+
+console.log(player);
+
+
+var Id_1 = {
+    'Name': "Jose Reyes",
+    'Age Lol' : 22,
+    'Sex' : "Male",
+};
+
+var idname = 'Name'
+var ID_1ShowName =  Id_1[idname];
+
+
+console.log(Id_1['Age Lol'])
+console.log(ID_1ShowName)
+
+
+var popeyes = {
+    'Names': ["Jose Reyes", "Johnson Dela Cruz"],
+    'Age' : 22,
+    'Gender' : "Bisexual",
+}
+
+//note: this is to add property to an object
+popeyes.sex = "Female"
+
+console.log(popeyes)
+
+//note: this is how you modify a property
+
+popeyes.Age = 25
+
+console.log(popeyes.Age)
+
+//note: this is how you delete a property 
+
+delete popeyes.Gender
+
+console.log(popeyes)
+
+//note: this is how you check whether the property exists in an object /in/ operator
+
+console.log('Age' in popeyes)
+console.log('sssId' in popeyes)
+
+//Recode refer to object in the line 367
+
+
+function mobaLegend(kill) {
+    Killtexts = ["You have slain the enemy", "Double Kill", "Triple Kill", "Maniac", "Savage"]
+    
+    switch (kill)   { 
+        case 'a':
+            return Killtexts[0];
+            break;
+        case 'b':
+            return Killtexts[1];
+            break;
+        case 'c':
+            return Killtexts[2];
+            break;
+        case 'd':
+            return Killtexts[3];
+            break;
+        }
+            return Killtexts[4];          
+    }
+
+//yung case strict siya if you intend na number = number and string '' = ''string
+    console.log(mobaLegend('d'))
+
+/*object: mobaLegend is subject for more simpler coding **balikan mo pag may natutunan ka pang bago**
+
+
+Example:
+
+let cards = ["You have slain the enemy", "Double Kill", "Triple Kill", "Maniac", "Savage"]
+let values = [1,2,3,4,5,6,7,8,9]
+
+Use patterns para pinagbalikan mo madaling mabalikan kahit iwanan ng matagal tas gamit ka reference
+*/
+        
