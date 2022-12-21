@@ -11,5 +11,29 @@ You'll gain confidence if you try this even if you're half of it. But, this is j
 
 Rating 4.5/5
 
-================================================
+=========================
+
+Dream projects:
+
+(DOABLE)
+***Poker game namay table na pwede laruin sa discord
+na pwedeng mag cater nang maraming participants 
+
+
+***Calculator
+        normal na calcu if kaya scientific calculator
+        pension
+        contributions mo ngayon
+        tax babayaran 
+         
+
+*** I want to have a website that looks sleek and efficient
+
+***Responsive website na niche
+
+***Tictactoe
+
+(REQUIRES MORE INTENSIVE EDUCATION) 
+
+***gusto kong maging contributor!!!! tas masama ung gawa ko sa public repo nila charot!!!
 

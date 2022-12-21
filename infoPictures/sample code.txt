@@ -1,0 +1,75 @@
+<script>
+//load all the packages
+//decalre all variables
+//create classess
+
+/*var num1 = prompt("Input 1"); //string
+var num2 = prompt("Input 2");  
+var num3 = prompt("Input 3");
+var num4 = prompt("Input 4");
+*/
+input_Number_Five = prompt("Input 5"); //string
+
+let inputNumberSix = prompt("Input 6");
+
+const inputNumberSeven = "api_key_456456456456456";
+
+
+
+if(age >= 1 && age <= 10){
+
+str = "AGe bracket 1 to 10";
+
+} else if (age >= 11 && age <= 20){
+
+str = "teen age";
+}
+
+
+
+
+
+
+//num5 = parseInt(num5);  //integer
+num5ssssssaaaaa = {address:"Bella Vita"};
+
+console.log('data type:' + typeof num5);
+console.log(num5);
+
+/*
+
+var test = "Abrakadabara " + num5;
+
+console.log("test:" + test);
+console.log('value:' + num5); //string
+
+console.log('data type in the memory num5:' + typeof num5); 
+*/
+/*
+num5 = null; //null
+console.log('null:' + num5);
+
+num5 = {name:"victor", lastname:"santos"}
+console.log('object:' + num5);
+
+console.log('type of:' + (typeof num5));
+
+if(typeof num5 == Object){
+console.log('get name from object: ' + num5.name);
+}
+
+
+num5 = true; //boolean
+console.log('boolean:' + num5);
+
+
+
+//alert(typeof num5);
+*/
+/*
+var sum = (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5));
+alert("Checking" + sum);
+alert(sum);
+*/
+
+</script>

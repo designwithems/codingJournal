@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+<title > Retirement Benefit Estimator</title>
+<center>
+    <div class="" style="width:600px;min-height:450px;border:2px solid #536fa3;">
+                <div><table style="width:100%">
+                    <div style="width: auto;"> To inquire your estimated Retirement Benefit, please provide the following data <br>
+                    and click "Compute" button to proceed</div>
+                    <tr>
+                        <th>Date of Birth </th>  
+                        <th> <input type="date" name="begin" style="width: 300px; font-size: 1.5em; color: rgb(169, 169, 169); text-align: center;" placeholder="MM-DD-YYYY" value="" ></th>
+                    </tr>   
+                    <tr>
+                        <th>Month and Year Started as an SSS
+                            Member (started working/business operation) </th>
+                        <th> <input type="date" name="" style="width: 300px;min-height: 50px ;font-size: 1.5em;color: rgb(169, 169, 169);text-align: center;" placeholder="MM-YYYY"></th>
+                    </tr>
+                    <tr>
+                        <th>Monthly Salary/Earnings </th>
+                        <th> <input type="text" oninput="this.value = this.value.replace(/[^0-9]/.g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" name="currency" style="width: 300px; min-height: 50px;text-align:right;border-right:none;outline:none;"></th>
+                    </tr>
+                </table>
+                <div style="column-span: 1;width: 600px;min-height: 200px;"><br><br>
+                    <button onclick="" > Compute </button>
+                    <button type="reset" value="reset"> Cancel</button>
+                </div>
+    </div>
+
+</div></center>
+  
+    <script src="practice2.js"></script>
+
+</body>
+</html>

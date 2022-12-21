@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comparison and Logical Operators</h1>
+    <h2> Let's know if you're qualified to vote</h2>
+        <p>Kindly input number</p>
+            <input id="age" value="20">
+            <button onclick="Myfunction()"> Try it</button>
+            <p id="demo"></p>
+    <h2>What's your age level?</h2>
+            <input id="age" value="20">
+            <button onclick="NewFunction()"> Try it</button>
+            <p id="demo1"></p>       
+ 
+ 
+ 
+ 
+ 
+ <script>
+        let age = Number(document.getElementById("age").value);
+
+        function Myfunction(){
+            let voteable;
+                if (isNaN(age)){
+                    voteable = "Input is not number"
+                } else {
+                    voteable = (age < 18)? "Too young" : "Old Enough";
+                }
+                document.getElementById("demo").innerHTML = voteable + " to vote";
+        }
+
+        function NewFunction(){
+        
+            let levels = {
+                "Infant" : [0,2],
+                "Toddler" : [3,4],
+                "Kids" : [5,10], 
+                "Teenager": [11,19], 
+                "Adult": [20,39], 
+                "Middle Age Man": [40, 59], 
+                "Infant" : [60, Infinity]
+            }
+            
+            for (category in levels){
+                if (age >= levels[category][0] && age <= levels[category][1]){
+                    document.getElementById("demo1").innerHTML = "Your under category of " + category;
+                }
+            }
+        } 
+
+
+    
+    </script>
+</body>
+</html>
