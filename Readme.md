@@ -3,7 +3,7 @@ I decided to publish it, to recognize my small efforts.
 And, slappu it to my future self.
 
 
-Table of Contents (LOL)
+Table of Contents
 
 Javascript (.js)
 
